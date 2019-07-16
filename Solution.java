@@ -7,8 +7,8 @@ public class Solution {
 	 int count = 1;
 	 int size = lists.length;
 
-   // Grab first list in array, this will be the basis of our new list.
-   ListNode newList = lists[0];
+         // Grab first list in array, this will be the basis of our new list.
+         ListNode newList = lists[0];
 
 	 while (count < size) {
 
