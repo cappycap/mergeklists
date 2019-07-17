@@ -3,60 +3,19 @@ public class Test {
   public static void main(String[] args) {
 
     // Create and populate list A, B and C.
-		ListNode listA = new ListNode(1);
-		listA.next = new ListNode(2);
-		listA.next.next = new ListNode(3);
-		listA.next.next.next = new ListNode(4);
-
-		ListNode listB = new ListNode(5);
-		listB.next = new ListNode(6);
-		listB.next.next = new ListNode(7);
-		listB.next.next.next = new ListNode(8);
-
-		ListNode listC = new ListNode(9);
-		listC.next = new ListNode(10);
-		listC.next.next = new ListNode(11);
-		listC.next.next.next = new ListNode(12);
+		ListNode listA = createList(1);
+		ListNode listB = createList(5);
+		ListNode listC = createList(9);
 
     // Print out lists.
 		System.out.println("List A:");
-    ListNode tempA = listA;
-
-		while (tempA.next != null) {
-
-			System.out.print(tempA.val + " ");
-			tempA = tempA.next;
-
-		}
-
-    System.out.print(tempA.val);
-    // End of print list A.
+    printList(listA);
 
     System.out.println("\nList B:");
-    ListNode tempB = listB;
-
-		while (tempB.next != null) {
-
-			System.out.print(tempB.val + " ");
-			tempB = tempB.next;
-
-		}
-
-    System.out.print(tempB.val);
-    // End of print list B.
+    printList(listB);
 
     System.out.println("\nList C:");
-    ListNode tempC = listC;
-
-		while (tempC.next != null) {
-
-			System.out.print(tempC.val + " ");
-			tempC = tempC.next;
-
-		}
-
-    System.out.print(tempC.val);
-    // End of print list C.
+    printList(listC);
 
     System.out.println("\nMerged list:");
 
@@ -67,18 +26,36 @@ public class Test {
     ListNode newList = Solution.mergeKLists(lists);
 
     // Return new list.
-    ListNode tempNew = newList;
+    printList(newList);
 
-		while (tempNew.next != null) {
+	}
 
-			System.out.print(tempNew.val + " ");
-			tempNew = tempNew.next;
+  // Function for creating incremented lists.
+  public static ListNode createList(int val) {
+
+    ListNode node = new ListNode(val);
+		node.next = new ListNode(val+1);
+		node.next.next = new ListNode(val+2);
+		node.next.next.next = new ListNode(val+3);
+
+    return node;
+
+  }
+
+  // Function for printing lists.
+  public static void printList(ListNode list) {
+
+    ListNode temp = list;
+
+		while (temp.next != null) {
+
+			System.out.print(temp.val + " ");
+			temp = temp.next;
 
 		}
 
-    System.out.print(tempNew.val);
-    // End of print merged list.
+    System.out.print(temp.val);
 
-	}
+  }
 
 }
