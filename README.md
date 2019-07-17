@@ -1,8 +1,8 @@
 # MergeKLists
 This project features three classes:
 1. **ListNode**: The defining node for a singly-linked list data structure.
-2. **Solution**: Class featuring one method: mergeKLists(), which accepts an array of ListNode lists and returns a single list containing the original lists from the array parameter.
-3. **Test**: A main function demonstrating the solution.
+2. **Solution**: A class featuring one method: mergeKLists(), which accepts an array of ListNode lists and returns a single list containing the original lists from the array parameter.
+3. **Test**: A class with a main method demonstrating the solution, and additional helper methods for creating and printing lists.
 
 # Time Complexity
 Part of this practice is to analyze the time complexity of the mergeKLists function. 
