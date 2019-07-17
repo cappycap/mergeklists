@@ -34,9 +34,9 @@ public class Test {
   public static ListNode createList(int val) {
 
     ListNode node = new ListNode(val);
-		node.next = new ListNode(val+1);
-		node.next.next = new ListNode(val+2);
-		node.next.next.next = new ListNode(val+3);
+    node.next = new ListNode(val+1);
+    node.next.next = new ListNode(val+2);
+    node.next.next.next = new ListNode(val+3);
 
     return node;
 
