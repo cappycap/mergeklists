@@ -3,12 +3,12 @@ public class Test {
   public static void main(String[] args) {
 
     // Create and populate list A, B and C.
-		ListNode listA = createList(1);
-		ListNode listB = createList(5);
-		ListNode listC = createList(9);
+    ListNode listA = createList(1);
+    ListNode listB = createList(5);
+    ListNode listC = createList(9);
 
     // Print out lists.
-		System.out.println("List A:");
+    System.out.println("List A:");
     printList(listA);
 
     System.out.println("\nList B:");
@@ -28,7 +28,7 @@ public class Test {
     // Return new list.
     printList(newList);
 
-	}
+  }
 
   // Function for creating incremented lists.
   public static ListNode createList(int val) {
@@ -47,12 +47,12 @@ public class Test {
 
     ListNode temp = list;
 
-		while (temp.next != null) {
+    while (temp.next != null) {
 
-			System.out.print(temp.val + " ");
-			temp = temp.next;
+        System.out.print(temp.val + " ");
+	temp = temp.next;
 
-		}
+    }
 
     System.out.print(temp.val);
 
