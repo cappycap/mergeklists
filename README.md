@@ -27,7 +27,7 @@ while (count < size) {
 		 temp.next = lists[count];
 		 count++;
 
-	 }
+}
 ```
 
 This while loop runs **n times**, where **n** is the **number of lists in the parameter array**.
